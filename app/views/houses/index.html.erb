@@ -1,0 +1,8 @@
+<% @houses.each do |house| %>
+  <%= link_to house.address, house_path(house) %>
+  <br>
+  <% house.pets.each do |pet| %>
+    <%= pet.name %>
+  <% end %>
+  <br>
+<% end %>
